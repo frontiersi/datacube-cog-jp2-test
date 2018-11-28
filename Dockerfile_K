@@ -1,0 +1,3 @@
+FROM klokantech/gdal:2.3
+
+RUN apt-get install time

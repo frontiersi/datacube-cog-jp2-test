@@ -6,6 +6,6 @@ See the Makefile for specific implementation.
 
 | Reader | gdalinfo (s) | one pixel (s) |
 |:-:	|:-:	|:-:	|
-| JP2 (OpenJPG) | 6.59 | 45.03 |
-| JP2 (Kakadu) | 8.90 | 35.43 |
-| COG | 5.72  | 5.26 |
+| JP2 (OpenJPG) | 4.18 | 53.26 |
+| JP2 (Kakadu) | 6.94| 27.71 |
+| COG | 3.77  | 3.16 |

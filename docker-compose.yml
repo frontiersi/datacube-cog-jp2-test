@@ -1,7 +1,9 @@
 version: "3.2"
 services:
   gdal:
-    image: geographica/gdal2:2.3.2
+    build:
+      dockerfile: Dockerfile
+      context: .
     environment:
       - AWS_ACCESS_KEY_ID=${ODC_ACCESS_KEY}
       - AWS_SECRET_ACCESS_KEY=${ODC_SECRET_KEY}
@@ -10,7 +12,9 @@ services:
       - ./:/data
     command: gdalinfo --version
   gdal_k:
-    image: klokantech/gdal:2.3
+    build:
+      dockerfile: Dockerfile_K
+      context: .
     environment:
       - AWS_ACCESS_KEY_ID=${ODC_ACCESS_KEY}
       - AWS_SECRET_ACCESS_KEY=${ODC_SECRET_KEY}
